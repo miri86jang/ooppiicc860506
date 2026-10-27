@@ -1,0 +1,15 @@
+{
+  "name": "Miri OPIc 스크립트북",
+  "short_name": "OPIc",
+  "id": "./opic_scriptbook.html",
+  "start_url": "./opic_scriptbook.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#2f5d50",
+  "lang": "ko",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
