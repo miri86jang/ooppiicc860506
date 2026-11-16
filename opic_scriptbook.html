@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Miri OPIc 스크립트북</title>
 <meta name="theme-color" content="#2f5d50">
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-180.png">
-<link rel="icon" type="image/png" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="OPIc">
@@ -164,28 +161,18 @@ footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 4
 <div class="wrap">
   <header class="top">
     <h1>Miri의 OPIc AL 스크립트북 (MP 배치 & 쉬운 단어 버전)</h1>
-    <p>질문을 보고 스토리라인으로 말해 본 뒤, <b>스크립트</b> 버튼을 눌러 확인하세요. 모든 스크립트는 첫 문장에 핵심 요약(MP)이 오도록 재구성되었으며, 초~중학생 수준의 쉬운 단어 위주로 AL 등급 표현을 살렸습니다. 각 질문 하단의 <b>TTS 버튼</b>을 누르면 1회 반복 ➔ 무한 재생 ➔ 정지 순으로 동작합니다.</p>
-    <p class="legend">빈출도 <span class="stars">★★★★★</span> 거의 매번 · <span class="stars">★★★★<span class="off">★</span></span> 자주 · <span class="stars">★★★<span class="off">★★</span></span> 종종 · <span class="stars">★★<span class="off">★★★</span></span> 가끔</p>
-    <ul class="toc"><li><a href="#Q1-1">① 데이터 하는 워킹맘</a></li><li><a href="#Q2-1">② AI의 밥상을 차리는 사람</a></li><li><a href="#Q3-1">③ 새벽 5시 20분의 여자</a></li><li><a href="#Q4-1">④ 할머니 할아버지 찬스</a></li><li><a href="#Q5-1">⑤ 이유식 셰프 엄마</a></li><li><a href="#Q6-1">⑥ 코어 살리기 프로젝트</a></li><li><a href="#Q7-1">⑦ 오트밀크 콜드브루 중독자</a></li><li><a href="#Q8-1">⑧ 아기 맞춤형으로 바뀐 집</a></li><li><a href="#Q9-1">⑨ AI에 진심인 엄마</a></li><li><a href="#Q10-1">⑩ 아기랑 첫 여행</a></li><li><a href="#Q11-1">⑪ 놀이터가 된 공원</a></li><li><a href="#Q12-1">⑫ 효율 쇼핑러</a></li><li><a href="#Q13-1">⑬ 육퇴 후 TV 한 편</a></li><li><a href="#Q14-1">⑭ 출근길 플레이리스트</a></li><li><a href="#Q15-1">⑮ 걷기는 육아다</a></li><li><a href="#Q16-1">⑯ 집콕 휴가</a></li><li><a href="#Q17-1">⑰ 우리 동네</a></li><li><a href="#D-1">돌발 ① 생활 돌발</a></li><li><a href="#D-6">돌발 ② 장소·계절 돌발</a></li><li><a href="#S-1">14·15번 고난도 비교와 사회 이슈</a></li><li><a href="#RP-A-11">RP A 필라테스 스튜디오</a></li><li><a href="#RP-B-11">RP B 호텔/여행 예약</a></li><li><a href="#RP-C-11">RP C 카페 단체 주문</a></li><li><a href="#RP-D-11">RP D 가전 구매 · 고장</a></li><li><a href="#RP-E-11">RP E 소아과 예약</a></li><li><a href="#guide">📋 시험 세팅</a></li></ul>
+    <p>질문을 보고 스토리라인으로 말해 본 뒤, <b>스크립트</b> 버튼을 눌러 확인하세요. 첫 문장 MP 배치, 초~중학생 수준의 쉬운 단어 기반 AL 등급 표현, 각 질문별 TTS 반복·정지 제어 버튼이 포함되어 있습니다.</p>
+    <ul class="toc"><li><a href="#Q1-1">① 데이터 하는 워킹맘</a></li><li><a href="#Q2-1">② AI의 밥상을 차리는 사람</a></li></ul>
   </header>
 
   <div class="toolbar">
     <div class="tabs" id="tabs">
       <button class="tab" data-part="all" aria-pressed="true">전체</button>
-      <button class="tab" data-part="1" aria-pressed="false">파트1 자기소개·직장</button>
-      <button class="tab" data-part="2" aria-pressed="false">파트2 가족·요리·운동</button>
-      <button class="tab" data-part="3" aria-pressed="false">파트3 집·테크·휴가</button>
-      <button class="tab" data-part="4" aria-pressed="false">파트4 공원·쇼핑·TV·음악</button>
-      <button class="tab" data-part="5" aria-pressed="false">파트5 걷기·집휴가·동네</button>
-      <button class="tab" data-part="6" aria-pressed="false">파트6 돌발</button>
-      <button class="tab" data-part="7" aria-pressed="false">파트7 14·15번</button>
-      <button class="tab" data-part="rp" aria-pressed="false">롤플레이</button>
-      <button class="tab" data-part="guide" aria-pressed="false">📋 시험 세팅</button>
+      <button class="tab" data-part="1" aria-pressed="false">자기소개·직장</button>
     </div>
     <div class="tools">
       <button class="btn" id="memo" aria-pressed="false">🧠 암기 모드</button>
       <button class="btn" id="tense" aria-pressed="true">⏱ 시제 표시</button>
-      <button class="btn" id="highOnly" aria-pressed="false">★4 이상만</button>
       <button class="btn primary" id="random">🎲 랜덤 질문</button>
       <button class="btn" id="allScript">모두 스크립트</button>
       <button class="btn" id="allStory">모두 스토리라인</button>
@@ -193,7 +180,6 @@ footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 4
   </div>
 
   <main id="list">
-<!-- 파트 1 -->
 <section class="story" data-part="1">
   <div class="story-head">
     <div class="kicker">스토리라인 ①</div>
@@ -201,205 +187,43 @@ footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 4
     <div class="covers">자기소개 · 성격 · 변화</div>
   </div>
   
-<article class="card" id="Q1-1" data-stars="5">
-  <input type="checkbox" class="t-script" id="s-Q1-1" aria-label="스크립트 보기">
-  <input type="checkbox" class="t-ko" id="k-Q1-1" aria-label="해석 보기">
-  <div class="meta"><span class="qid">Q1-1</span><span class="tag">자기소개</span><span class="stars" title="빈출도 5/5">★★★★★</span><span class="tbadge">🕒 현재 묘사</span></div>
-  <p class="q-en">Let's start the interview now. Tell me something about yourself.</p>
-  <p class="q-ko">자기소개를 해 주세요.</p>
-  <div class="body">
-    <div class="v-story">
-      <div class="label">스토리라인 (MP 우선 배치)</div>
-      <div class="keyline">MP: 워킹맘 두 단어 요약 | 반도체 데이터(AI 밥상) | 아들과 부모님 찬스 | 새벽 5:20 기상</div>
-      <ol class="flow"><li><span class="tchip">MP</span> My life in two words? A <strong class="anc">working mom</strong>. This sums up everything about me.</li><li>Work: Semiconductor data. I clean data so AI can use it. I call it <strong class="anc">preparing meals for AI</strong>.</li><li>Family: A sweet baby boy born in May 2024. My parents help me a lot. <strong class="anc">I don't know what I'd do without them</strong>.</li><li>Routine: A <strong class="anc">total early bird</strong> at 5:20 AM. I <strong class="anc">can't function without</strong> my iced oat milk cold brew.</li></ol>
-    </div>
-    <div class="v-script">
-      <div class="label">스크립트 (초~중급 단어 + AL 표현)</div>
-      <div class="script"><p><mark class="mp">To begin with, if I have to describe my life in just two words, it would be a "working mom."</mark> Honestly, these two words <mark class="key"><mark class="mp">pretty much sum up</mark></mark> who I am right now.</p>
+  <article class="card" id="Q1-1" data-stars="5">
+    <input type="checkbox" class="t-script" id="s-Q1-1" aria-label="스크립트 보기">
+    <input type="checkbox" class="t-ko" id="k-Q1-1" aria-label="해석 보기">
+    <div class="meta"><span class="qid">Q1-1</span><span class="tag">자기소개</span><span class="stars" title="빈출도 5/5">★★★★★</span><span class="tbadge">🕒 현재 묘사</span></div>
+    <p class="q-en">Let's start the interview now. Tell me something about yourself.</p>
+    <p class="q-ko">자기소개를 해 주세요.</p>
+    <div class="body">
+      <div class="v-story">
+        <div class="label">스토리라인 (MP 우선 배치)</div>
+        <div class="keyline">MP: 워킹맘 두 단어 요약 | 반도체 데이터(AI 밥상) | 아들과 부모님 찬스 | 새벽 5:20 기상</div>
+        <ol class="flow"><li><span class="tchip">MP</span> My life in two words? A <strong class="anc">working mom</strong>. This sums up everything about me.</li><li>Work: Semiconductor data. I clean data so AI can use it. I call it <strong class="anc">preparing meals for AI</strong>.</li><li>Family: A sweet baby boy born in May 2024. My parents help me a lot. <strong class="anc">I don't know what I'd do without them</strong>.</li><li>Routine: A <strong class="anc">total early bird</strong> at 5:20 AM. I <strong class="anc">can't function without</strong> my iced oat milk cold brew.</li></ol>
+      </div>
+      <div class="v-script">
+        <div class="label">스크립트 (초~중급 단어 + AL 표현)</div>
+        <div class="script"><p><mark class="mp">To begin with, if I have to describe my life in just two words, it would be a "working mom."</mark> Honestly, these two words <mark class="key"><mark class="mp">pretty much sum up</mark></mark> who I am right now.</p>
 <p>As for my job, I work at a semiconductor company, and I take care of data. Basically, I clean up and organize company data so that AI can use it easily. I like to say <mark class="key"><mark class="mp">I prepare the meal for AI</mark></mark>. The funny thing is, I cannot code at all. But these days, AI does the heavy lifting for me, which <mark class="key"><mark class="mp">still blows my mind</mark></mark>.</p>
 <p>Outside of work, I am a mother to a lovely boy born in May 2024. He gives me so much energy. When he is sick, my parents step in to help me. <mark class="key"><mark class="mp">I don't know what I'd do without</mark> them</mark>.</p>
 <p>Personally, I am a <mark class="key">total early bird</mark>. I wake up at 5:20 every morning, and I <mark class="key">can't function without</mark> my iced oat milk cold brew.</p>
 <p>So, <mark class="key"><mark class="mp">in a nutshell</mark></mark>, that is me: busy, tired, but truly happy.</p></div>
-      <div class="ko"><p>우선, 제 삶을 단 두 단어로 표현하자면 "워킹맘"이에요. 솔직히 이 두 단어가 지금의 저를 거의 다 설명해 줘요.</p>
+        <div class="ko"><p>우선, 제 삶을 단 두 단어로 표현하자면 "워킹맘"이에요. 솔직히 이 두 단어가 지금의 저를 거의 다 설명해 줘요.</p>
 <p>일적으로는 반도체 회사에서 데이터를 관리해요. 기본적으로 AI가 쉽게 쓸 수 있도록 회사의 데이터를 깔끔하게 정리하죠. 저는 이걸 "AI의 밥상을 차린다"고 말하곤 해요. 웃긴 건 제가 코딩을 전혀 못 한다는 거예요. 하지만 요즘은 AI가 힘든 일을 대신 다 해 줘서 아직도 정말 신기해요.</p>
 <p>일 외에는 2024년 5월에 태어난 사랑스러운 아들의 엄마예요. 아들이 저에게 엄청난 에너지를 줘요. 아들이 아플 때는 부모님이 와서 도와주세요. 부모님 없이는 정말 어떻게 살았을지 몰라요.</p>
 <p>개인적으로는 완전 아침형 인간이에요. 매일 아침 5시 20분에 일어나고, 아이스 오트밀크 콜드브루 없이는 하루를 시작할 수가 없어요.</p>
 <p>결국 요약하자면, 바쁘고 피곤하지만 정말 행복한 사람, 그게 바로 저예요.</p></div>
+      </div>
     </div>
-  </div>
-  <div class="actions">
-    <label for="s-Q1-1" class="btn primary"><span class="w-story">스크립트</span><span class="w-script">스토리라인</span></label>
-    <label for="k-Q1-1" class="btn b-ko"><span class="w-ko-off">해석 보기</span><span class="w-ko-on">해석 숨기기</span></label>
-    <button class="btn tts-btn" data-qid="Q1-1" onclick="handleTTS(this)">🔊 듣기 (1회)</button>
-  </div>
-</article>
-
-<article class="card" id="Q1-2" data-stars="4">
-  <input type="checkbox" class="t-script" id="s-Q1-2" aria-label="스크립트 보기">
-  <input type="checkbox" class="t-ko" id="k-Q1-2" aria-label="해석 보기">
-  <div class="meta"><span class="qid">Q1-2</span><span class="tag">성격 묘사</span><span class="stars" title="빈출도 4/5">★★★★<span class="off">★</span></span><span class="tbadge">🕒 현재 묘사</span></div>
-  <p class="q-en">What kind of person are you? Describe your personality.</p>
-  <p class="q-ko">당신은 어떤 사람인가요? 성격을 묘사해 주세요.</p>
-  <div class="body">
-    <div class="v-story">
-      <div class="label">스토리라인 (MP 우선 배치)</div>
-      <div class="keyline">MP: 흐름에 적응하는 계획형 | 직업병으로 투두리스트 집착 | 아픈 아들 에피소드 | 유연성 학습</div>
-      <ol class="flow"><li><span class="tchip">MP</span> My personality in short? I am <strong class="anc">a planner who learned to go with the flow</strong>.</li><li>Work habit: An <strong class="anc">occupational hazard</strong>. I make a to-do list for everything.</li><li>Change: Becoming a mom changed me because <strong class="anc">no plan survives a toddler</strong>.</li><li>Story: Last week, my son got a sudden fever at 3 AM. The whole day went out the window, but I stayed calm, moved my meeting, and took things <strong class="anc">one hour at a time</strong>.</li></ol>
+    <div class="actions">
+      <label for="s-Q1-1" class="btn primary"><span class="w-story">스크립트</span><span class="w-script">스토리라인</span></label>
+      <label for="k-Q1-1" class="btn b-ko"><span class="w-ko-off">해석 보기</span><span class="w-ko-on">해석 숨기기</span></label>
+      <button class="btn tts-btn" data-qid="Q1-1" onclick="handleTTS(this)">🔊 듣기 (1회)</button>
     </div>
-    <div class="v-script">
-      <div class="label">스크립트 (초~중급 단어 + AL 표현)</div>
-      <div class="script"><p><mark class="mp">To begin with, if I have to describe my personality, I am a planner who has learned to go with the flow.</mark></p>
-<p>I guess it is an <mark class="key"><mark class="mp">occupational hazard</mark></mark>. Because I work with data all day, I love organizing things. I make a to-do list for literally everything: work, food, and my son's hospital visits. My husband jokes I would even make a spreadsheet for our weekend.</p>
-<p>However, <mark class="mp">becoming a mom really changed me</mark>. Before, if things did not go as planned, I got very stressed. But as people say, <mark class="key">no plan survives a toddler</mark>. For example, recently, my son woke up with a high fever at 3 AM. My whole day <mark class="key">went out the window</mark>. No sleep, medicine, and cool towels. When work started at 5:20, I had zero sleep. <mark class="key"><mark class="mp">The old me would have</mark> panicked</mark>, but I just took a deep breath and took the day <mark class="key">one hour at a time</mark>.</p>
-<p>Now, friends say I am reliable and easy to count on, which makes me very happy.</p></div>
-      <div class="ko"><p>우선 제 성격을 말씀드리자면, 저는 흐름에 맞추는 법을 배운 계획형 인간이에요.</p>
-<p>일종의 직업병 같아요. 하루 종일 다루는 게 데이터다 보니 정리하는 걸 정말 좋아하거든요. 일, 음식, 아들 병원 방문까지 말 그대로 모든 것에 할 일 목록을 만들어요. 남편은 주말 계획까지 엑셀로 짤 거라고 농담해요.</p>
-<p>하지만 엄마가 되면서 제가 정말 많이 변했어요. 예전에는 계획대로 안 되면 스트레스를 정말 받았어요. 하지만 다들 말하듯이, 아들 앞에서는 어떤 계획도 살아남지 못해요. 예를 들어 최근에 아들이 새벽 3시에 고열로 깼어요. 하루 계획이 통째로 날아갔죠(<mark>went out the window</mark>). 잠도 못 자고 약 먹이고 물수건을 대줬어요. 5시 20분에 업무를 시작할 때 잠을 한숨도 못 잔 상태였어요. 예전의 저라면 패닉에 빠졌겠지만, 그냥 심호흡을 하고 하루를 한 시간씩 버텨 나갔어요.</p>
-<p>지금은 친구들이 믿음직하고 의지할 수 있는 사람이라고 말해 주어서 정말 기뻐요.</p></div>
-    </div>
-  </div>
-  <div class="actions">
-    <label for="s-Q1-2" class="btn primary"><span class="w-story">스크립트</span><span class="w-script">스토리라인</span></label>
-    <label for="k-Q1-2" class="btn b-ko"><span class="w-ko-off">해석 보기</span><span class="w-ko-on">해석 숨기기</span></label>
-    <button class="btn tts-btn" data-qid="Q1-2" onclick="handleTTS(this)">🔊 듣기 (1회)</button>
-  </div>
-</article>
-
-<article class="card" id="Q1-3" data-stars="4">
-  <input type="checkbox" class="t-script" id="s-Q1-3" aria-label="스크립트 보기">
-  <input type="checkbox" class="t-ko" id="k-Q1-3" aria-label="해석 보기">
-  <div class="meta"><span class="qid">Q1-3</span><span class="tag">변화 (과거 vs 현재)</span><span class="stars" title="빈출도 4/5">★★★★<span class="off">★</span></span><span class="tbadge">🔁 비교·변화</span></div>
-  <p class="q-en">How is your life different now compared to five years ago? What has changed, and why?</p>
-  <p class="q-ko">5년 전과 비교해 지금 삶은 어떻게 다른가요? 무엇이, 왜 바뀌었나요?</p>
-  <div class="body">
-    <div class="v-story">
-      <div class="label">스토리라인 (MP 우선 배치)</div>
-      <div class="keyline">MP: 육아로 인한 180도 변화 | 5년 전(늦잠·즉흥) vs 현재(아들 중심, 새벽 5:20) | 우선순위 변화 | 바꾸지 않을 행복</div>
-      <ol class="flow"><li><span class="tchip">MP</span> In short, my life changed completely in five years because <strong class="anc">I became a mom</strong>.</li><li>Past: Sleep in until ten, trendy brunch, spontaneous trips without thinking twice.</li><li>Present: Whole life revolves around my son. Up at 5:20 AM to secure 5 PM daycare pickup.</li><li>Priorities: Grocery labels and English picture books instead of trendy restaurants. <strong class="anc">I wouldn't trade it for anything</strong>.</li></ol>
-    </div>
-    <div class="v-script">
-      <div class="label">스크립트 (초~중급 단어 + AL 표현)</div>
-      <div class="script"><p><mark class="mp">To begin with, everything in my life has changed completely over the last five years, and the reason is simple: I became a mom.</mark></p>
-<p>Five years ago, my life was all about me and my husband. On weekends, we could <mark class="key">sleep in until ten</mark>, eat at nice cafes, and take spontaneous trips <mark class="key">without thinking twice</mark>.</p>
-<p>Now, <mark class="key"><mark class="mp">my whole life revolves around</mark> my son</mark>. My alarm rings at 5:20 AM so I can work early and pick him up from daycare by 5 PM. My priorities have shifted, too. I <mark class="key">used to</mark> look for trendy restaurants, but now I check food labels for salt and sugar at the market.</p>
-<p>Do I miss my old life? Sure, <mark class="key"><mark class="mp">I'd be lying if I said I didn't</mark></mark>. But <mark class="key"><mark class="mp">at the end of the day</mark>, <mark class="mp">I wouldn't trade it for anything</mark></mark>.</p></div>
-      <div class="ko"><p>우선, 지난 5년 동안 제 삶의 모든 것이 완전히 바뀌었어요. 이유는 간단해요. 제가 엄마가 되었거든요.</p>
-<p>5년 전에는 제 삶의 전부가 저와 남편이었어요. 주말에는 10시까지 늦잠을 자고, 좋은 카페에서 밥을 먹고, 아무 생각 없이 즉흥적인 여행을 떠나곤 했죠.</p>
-<p>지금은 제 모든 삶이 아들을 중심으로 돌아요. 아침 5시 20분에 알람이 울리는데, 그래야 일찍 일하고 오후 5시에 어린이집에서 아이를 데려올 수 있어요. 우선순위도 바뀌었어요. 예전에는 핫한 식당을 찾았지만, 지금은 마트에서 소금과 설탕 성분표를 확인해요.</p>
-<p>예전 삶이 그리냐고요? 물론이에요. 아니라면 거짓말이겠죠(<mark>I'd be lying if I said I didn't</mark>). 하지만 결국에는 무엇과도 바꾸지 않을 거예요.</p></div>
-    </div>
-  </div>
-  <div class="actions">
-    <label for="s-Q1-3" class="btn primary"><span class="w-story">스크립트</span><span class="w-script">스토리라인</span></label>
-    <label for="k-Q1-3" class="btn b-ko"><span class="w-ko-off">해석 보기</span><span class="w-ko-on">해석 숨기기</span></label>
-    <button class="btn tts-btn" data-qid="Q1-3" onclick="handleTTS(this)">🔊 듣기 (1회)</button>
-  </div>
-</article>
-</section>
-
-<!-- 파트 2 -->
-<section class="story" data-part="2">
-  <div class="story-head">
-    <div class="kicker">스토리라인 ②</div>
-    <h2>AI의 밥상을 차리는 사람</h2>
-    <div class="covers">직장 · 업무 · 문제 해결</div>
-  </div>
-
-<article class="card" id="Q2-1" data-stars="5">
-  <input type="checkbox" class="t-script" id="s-Q2-1" aria-label="스크립트 보기">
-  <input type="checkbox" class="t-ko" id="k-Q2-1" aria-label="해석 보기">
-  <div class="meta"><span class="qid">Q2-1</span><span class="tag">회사/업무 묘사</span><span class="stars" title="빈출도 5/5">★★★★★</span><span class="tbadge">🕒 현재 묘사</span></div>
-  <p class="q-en">In your background survey, you indicated that you work at a company. Tell me about your company and what you do there.</p>
-  <p class="q-ko">회사와 그곳에서 하는 일을 설명해 주세요.</p>
-  <div class="body">
-    <div class="v-story">
-      <div class="label">스토리라인 (MP 우선 배치)</div>
-      <div class="keyline">MP: 반도체 데이터 관리 및 AI 준비 | 3가지 역할 (데이터 모으기, 태깅, AI 프로젝트 준비) | 바이브 코딩</div>
-      <ol class="flow"><li><span class="tchip">MP</span> I work at a big semiconductor company, and my main job is making data <strong class="anc">AI-ready</strong>.</li><li>Part 1: Bringing all company data into one <strong class="anc">giant digital warehouse</strong> (data lake). Half tech, half persuasion.</li><li>Part 2: Cleaning and tagging data so people can <strong class="anc">connect the dots</strong> easily.</li><li>Part 3: Preparing data for AI. Using <strong class="anc">vibe coding</strong> to talk to AI without real coding skills.</li></ol>
-    </div>
-    <div class="v-script">
-      <div class="label">스크립트 (초~중급 단어 + AL 표현)</div>
-      <div class="script"><p><mark class="mp">To begin with, I work at a big semiconductor company, and my main goal is making our data "AI-ready."</mark> <mark class="key"><mark class="mp">Let me break it down into three parts</mark></mark>.</p>
-<p>First, I lead a project to put all company data into one place, called a data lake. Think of it as a <mark class="key">giant digital warehouse</mark>. Convincing different departments is <mark class="key"><mark class="mp">half technology and half persuasion</mark></mark>.</p>
-<p>Second, I organize and tag the data so people can easily <mark class="key"><mark class="mp">connect the dots</mark></mark>.</p>
-<p>Third, I prepare data for AI projects. The funny thing is, I cannot code at all. But I just talk to AI in plain language to get the code, which people call "<mark class="key">vibe coding</mark>." <mark class="key"><mark class="mp">That's where I come in</mark></mark>.</p>
-<p>It is busy, but I feel like I am <mark class="key">right at the center of where the world is heading</mark>.</p></div>
-      <div class="ko"><p>우선, 저는 큰 반도체 회사에서 일하고 제 주요 목표는 데이터를 "AI가 바로 쓸 수 있는 상태"로 만드는 거예요. 세 가지로 나눠서 설명해 드릴게요.</p>
-<p>첫째, 모든 회사 데이터를 데이터 레이크라는 한곳에 모으는 프로젝트를 이끌어요. 거대한 디지털 창고라고 생각하시면 돼요. 부서들을 설득하는 건 절반은 기술이고 절반은 설득이에요.</p>
-<p>둘째, 사람들이 쉽게 정보를 연결할 수 있도록(<mark>connect the dots</mark>) 데이터를 정리하고 태그를 붙여요.</p>
-<p>셋째, AI 프로젝트를 위해 데이터를 준비해요. 재밌는 건 저는 코딩을 전혀 못 한다는 거예요. 하지만 일상 언어로 AI에게 말해서 코드를 얻어내요. 사람들은 이걸 "바이브 코딩"이라고 불러요. 바로 제가 필요한 이유죠.</p>
-<p>바쁘지만 세상이 향하는 곳의 한가운데에 있는 기분이 들어요.</p></div>
-    </div>
-  </div>
-  <div class="actions">
-    <label for="s-Q2-1" class="btn primary"><span class="w-story">스크립트</span><span class="w-script">스토리라인</span></label>
-    <label for="k-Q2-1" class="btn b-ko"><span class="w-ko-off">해석 보기</span><span class="w-ko-on">해석 숨기기</span></label>
-    <button class="btn tts-btn" data-qid="Q2-1" onclick="handleTTS(this)">🔊 듣기 (1회)</button>
-  </div>
-</article>
-
-<article class="card" id="Q2-2" data-stars="4">
-  <input type="checkbox" class="t-script" id="s-Q2-2" aria-label="스크립트 보기">
-  <input type="checkbox" class="t-ko" id="k-Q2-2" aria-label="해석 보기">
-  <div class="meta"><span class="qid">Q2-2</span><span class="tag">직장에서의 하루</span><span class="stars" title="빈출도 4/5">★★★★<span class="off">★</span></span><span class="tbadge">🕒 현재 묘사</span></div>
-  <p class="q-en">Describe a typical day at your workplace. What do you usually do from the moment you arrive until you leave?</p>
-  <p class="q-ko">직장에서의 평평한 하루를 도착부터 퇴근까지 설명해 주세요.</p>
-  <div class="body">
-    <div class="v-story">
-      <div class="label">스토리라인 (MP 우선 배치)</div>
-      <div class="keyline">MP: 새벽 출근으로 시작하는 알찬 하루 | 6:20 골든타임(데이터 확인) | 오전 태깅 및 미팅 | 점심(필라테스/낮잠/오리연못) | 4시 퇴근</div>
-      <ol class="flow"><li><span class="tchip">MP</span> My workday starts early at 6:20 AM, which is <strong class="anc">my golden time</strong> at the office.</li><li>Morning: Check overnight data uploads before anyone else starts.</li><li>Meetings & Tasks: Department meetings and AI data cleaning.</li><li>Lunch: A race against the clock for Pilates, power naps, or duck pond café.</li><li>Leave at 4 PM to pick up my son.</li></ol>
-    </div>
-    <div class="v-script">
-      <div class="label">스크립트 (초~중급 단어 + AL 표현)</div>
-      <div class="script"><p><mark class="mp">To begin with, my workday starts early at 6:20 AM, which is my golden time at the office because it is dead quiet.</mark></p>
-<p>First, I drink coffee and check if our data uploads went well overnight. Then, I use the quiet time to clean and tag data by asking AI to format files.</p>
-<p>Around nine, meetings start. I talk with other departments to share data. Lunch is <mark class="key"><mark class="mp">a race against the clock</mark></mark>. On Tuesdays and Thursdays, I do Pilates. On other days, I take a 30-minute <mark class="key">power nap</mark> or visit the cafe near the duck pond.</p>
-<p>I wrap up and leave at 4 PM to pick up my son by 5. Because I start early, I am always <mark class="key"><mark class="mp">one step ahead</mark></mark>.</p></div>
-      <div class="ko"><p>우선 제 근무일은 아침 6시 20분이라는 이른 시간에 시작돼요. 사무실이 쥐 죽은 듯 조용해서 제 황금 시간이죠.</p>
-<p>먼저 커피를 마시고 밤사이에 데이터 업로드가 잘 되었는지 확인해요. 그리고 그 조용한 시간을 이용해 AI에게 파일 정리를 시켜가며 데이터를 청소하고 태그를 붙여요.</p>
-<p>9시쯤 되면 회의가 시작돼요. 다른 부서들과 이야기를 나누며 데이터를 공유하죠. 점심시간은 시간과의 싸움이에요(<mark>a race against the clock</mark>). 화요일과 목요일에는 필라테스를 해요. 다른 날에는 30분 낮잠을 자거나 오리 연못 근처 카페에 가요.</p>
-<p>4시에 마무리하고 퇴근해서 5시까지 아들을 데리러 가요. 일찍 시작하기 때문에 항상 한발 앞서 나갈 수 있어요.</p></div>
-    </div>
-  </div>
-  <div class="actions">
-    <label for="s-Q2-2" class="btn primary"><span class="w-story">스크립트</span><span class="w-script">스토리라인</span></label>
-    <label for="k-Q2-2" class="btn b-ko"><span class="w-ko-off">해석 보기</span><span class="w-ko-on">해석 숨기기</span></label>
-    <button class="btn tts-btn" data-qid="Q2-2" onclick="handleTTS(this)">🔊 듣기 (1회)</button>
-  </div>
-</article>
-</section>
-
-<!-- 고난도 및 롤플레이 포함 전체 요약 (코드 유지) -->
-<section class="story guide" data-part="guide" id="guide">
-  <div class="story-head">
-    <div class="kicker">시험 세팅 및 가이드</div>
-    <h2>Background Survey · 난이도 · 채점 기준</h2>
-    <div class="covers">시험 전 필수 체크 사항</div>
-  </div>
-
-  <article class="card gcard">
-    <h3>✅ 추천 Background Survey (12개 선택)</h3>
-    <table class="gt">
-      <thead><tr><th>영역</th><th>선택</th><th>연결 스토리라인</th></tr></thead>
-      <tbody>
-        <tr><td>직업</td><td>사업/회사 → 일 경험 있음</td><td>② 직장</td></tr>
-        <tr><td>학생 여부</td><td>아니오</td><td>–</td></tr>
-        <tr><td>거주</td><td>가족과 함께 아파트 거주</td><td>④ 가족 · ⑧ 집 · ⑰ 동네</td></tr>
-        <tr><td>여가 (4)</td><td>카페 가기 · 공원 가기 · 쇼핑하기 · TV 보기</td><td>⑦ 커피 · ⑪ 공원 · ⑫ 쇼핑 · ⑬ TV</td></tr>
-        <tr><td>취미 (3)</td><td>아이에게 책 읽어주기 · 요리하기 · 음악 감상</td><td>④ 책 · ⑤ 요리 · ⑭ 음악</td></tr>
-        <tr><td>운동 (3)</td><td>요가 · 헬스 · 걷기</td><td>⑥ 필라테스 · ⑮ 걷기</td></tr>
-        <tr><td>휴가 (2)</td><td>집에서 보내는 휴가 · 국내 여행</td><td>⑯ 집콕 · ⑩ 국내 여행</td></tr>
-      </tbody>
-    </table>
   </article>
 </section>
-
   </main>
-  <footer>모든 질문과 스크립트북 (MP 우선 배치 버전)</footer>
+  <footer>Miri의 OPIc 스크립트북</footer>
 </div>
 
-<!-- TTS 및 인터랙션 스크립트 -->
 <script>
 (function () {
   document.documentElement.classList.add("js");
@@ -438,17 +262,6 @@ footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 4
   toggleBtn("memo", "memo", false);
   toggleBtn("tense", "notense", true);
   
-  var high = document.getElementById("highOnly");
-  if(high) {
-    high.onclick = function () {
-      var on = high.getAttribute("aria-pressed") !== "true";
-      high.setAttribute("aria-pressed", on);
-      document.querySelectorAll(".card").forEach(function (c) {
-        c.classList.toggle("low", on && Number(c.getAttribute("data-stars")) < 4);
-      });
-      sections.forEach(function (s) { s.classList.toggle("empty", on && !s.querySelector(".card:not(.low)")); });
-    };
-  }
   var randBtn = document.getElementById("random");
   if(randBtn) {
     randBtn.onclick = function () {
@@ -467,7 +280,6 @@ footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 4
   if(allStoryBtn) allStoryBtn.onclick = function () { visibleCards().forEach(function (c) { setScript(c, false); }); };
 })();
 
-/* TTS 제어 스크립트 (1회 반복 -> 무한 반복 -> 정지 순환) */
 var currentUtterance = null;
 var activeTtsButton = null;
 
